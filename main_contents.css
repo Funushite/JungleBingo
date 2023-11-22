@@ -1,0 +1,205 @@
+/* --- main-contents= --- */
+  /* --- pts --- */
+#pts_flame {
+  /* center */
+  background-color: gray;
+  outline: 8px yellowgreen ridge;
+  border: 10px ridge yellow;
+  border-bottom-width: 6px;
+  border-top-width: 6px;
+
+  top: 59%;
+  right: -70%;
+
+  max-width: 196px;
+  max-height: 108px;
+  height: 45%;
+  width: 25%;
+}
+#pts {
+  color: red;
+  font-size: 600%;
+  font-family: 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  text-shadow: 2px 2px 0 whitesmoke, -2px -2px 0 whitesmoke, -2px 2px 0 whitesmoke, 2px -2px 0 whitesmoke;
+  font-weight: bold;
+}
+#PTS{
+  /* text-center */
+  top: 90%;
+  left: 85%;
+
+  font-size: 250%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(165, 165, 0);
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+  font-weight: bold;
+}
+
+  /* ------ */
+  /* -- jungle_bingo -- */
+#jungle {
+  /* center */
+  border: black 1px solid;
+  top: 20%;
+  max-width: 402px;
+  max-height: 402px;
+  height: 60%;
+  width: 60%;
+  background-color: rgb(44, 174, 139);
+}
+
+.jungle_floor {
+  /* center */
+  width: 96%;
+  height: 96%;
+  background-color: khaki;
+  border-spacing: 0px 0px;
+  border: 2px gray solid;
+}
+
+.jungle_td {
+  text-align: center;
+  width: 62px;
+  height: 62px;
+  font-size: 30px;
+}
+
+.flame {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 132, 0, 0.3);
+}
+
+.wall { background-color: rgba(255, 132, 0, 0.7);}
+.road { background-color: khaki;}
+
+.up {
+  color: rgba(255, 0, 0, 0.5);
+  font-size: 40px;
+}
+.down {
+  color: rgba(0, 0, 255, 0.5);
+  font-size: 20px;
+}
+
+.jungle_squares {
+  background-color: rgba(255, 47, 47, 0.5);
+  width: 16%;
+  height: 16%;
+  border: 2px gray solid;
+}
+
+.jungle_open{ background-color: gray;}
+
+.finish{ filter: grayscale(100%); } /* [https://web-de-asobo.net/2021/10/16/filter-grayscale/] */
+
+    /* --- boxes --- */
+.box{
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background-color: white;
+  overflow: hidden;
+
+  border: 4px black ridge;
+  border-radius: 10px;
+}
+.box :active{
+  background-color: rgb(175, 175, 175);
+}
+#start{
+  /* box */
+  display: block;
+  overflow: hidden;
+
+  width: 45%;
+  height: 12%;
+}
+#start p{
+  font-size: 200%;
+  color: blue;
+  margin: -2% 0 0 -5%;
+  padding: 4% 5% 0 5%;
+  width: 100%;
+  height: 100%;
+}
+
+#finish{
+  /* box */
+  display: none;
+  overflow: hidden;
+  
+  width: 45%;
+  height: 12%;
+}
+#finish p{
+  font-size: 150%;
+  color: black;
+  margin: -2% 0 0 -5%;
+  padding: 4% 5% 0 5%;
+  width: 100%;
+  height: 100%;
+}
+
+    /* --- boxes --- */
+  /* -- jungle_bingo -- */
+
+  /* -- bingo_sheet -- */
+#sheet {
+  /* center */
+  background-color: rgb(255, 170, 213);
+
+  top: -1%;
+  right: -70%;
+
+  max-height: 256px;
+  max-width: 248px;
+  height: 40%;
+  width: 30%;
+}
+
+#sheet_table {
+  background-color: black;
+  text-align: center;
+  border-spacing: 8px 5px;
+  border: 2px white solid;
+  height: 224px;
+  width: 224px;
+
+  /* center */
+}
+
+.sheet_thead {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: rgb(255, 47, 47);
+}
+
+.sheet_squares {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: rgb(255, 47, 47);
+  padding-top: 5px;
+  border: 2px gray solid;
+  width: 32px;
+  height: 25px;
+  min-width: 30px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.open {
+  background-color: black;
+  color: black;
+}
+
+._FREE_ {
+  content: "FREE";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 10px;
+  color: red;
+  text-shadow: 0.5px 0.5px 0 white, -0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px -0.5px 0 white;
+  overflow: visible;
+}
+
+  /* -- bingo_sheet -- */

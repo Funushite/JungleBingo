@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ジャングルビンゴ</title>
+  <link rel="stylesheet" href="J_game_monitor.css">
+  <link rel="stylesheet" href="header_contents.css">
+  <link rel="stylesheet" href="main_contents.css">
+</head>
+
+<body>
+
+  <!-- src = header_contents.js -->
+  <div class="header">
+    <div class="header_contents center" id="floor">
+      <p class="text_center"></p>
+    </div>
+    <div class="header_contents center" id="animation">
+      <img id="start_ani" class="center" src="START.png" alt="START">
+      <img id="time-up_ani" class="center" src="TIME-UP.png" alt="TIME-UP" style="transform: scale(1.1);">
+      <div class="center bomb_r" id="ani_open">
+        <div class="center bomb_o"></div>
+        <p class="text_center ani_p"></p>
+      </div>
+      <div class="center" id="ani_reach">
+        <p class="text_center ani_p">リーチ！</p>
+      </div>
+      <div class="center" id="ani_BINGO" style="display: none;">
+        <div class="bomb_r center" style="width: 100%; height: 100%;"><div class="bomb_o center" style="width: 90%; height: 90%;"></div></div>
+        <p class="text_center ani_p"><span id="b">B</span><span id="i">I</span><span id="n">N</span><span id="g">G</span><span id="o">O</span></p>
+      </div>
+    </div>
+    <div class="header_contents center" id="countdown">
+      <p class="text_center">0 : 00</p>
+    </div>
+    
+  </div>
+
+
+  <div class="main-content">
+
+    <!-- src = "jungle_bingo.js" -->
+    <div id="jungle" class="center">
+      <span class="maze_storage" style="display: none;"></span>
+      <span class="maze_storage" style="display: none;"></span>
+      <button id="start"  class="center box" onclick="on_start()" ><p>START</p></button>
+      <button id="finish" class="center box" onclick="on_finish()"><p>メニューに戻る</p></button>
+    </div>
+
+    <!-- src = "sheet_bingo.js" -->
+    <div class="center" id="sheet">
+      <table id="sheet_table" class="center">
+        <thead class="sheet_thead">
+          <tr class="sheet_squares sheet_thead">
+            <th>B</th>
+            <th>I</th>
+            <th>N</th>
+            <th>G</th>
+            <th>O</th>
+          </tr>
+        </thead>
+          <tbody id="bingo_sheet">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="center" id="pts_flame">
+      <p id="pts" class="text_center">0</p>
+      <p class="text_center" id="PTS">PTS</p>
+    </div>
+  </div>
+
+</body>
+<script src="header_contents.js"></script>
+<script src="jungle_bingo.js"></script>
+<script src="sheet_bingo.js"></script>
+</html>

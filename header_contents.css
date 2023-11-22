@@ -1,0 +1,126 @@
+/* --- header= --- */
+
+.header_contents {
+  /* center */
+  max-height: 399px;
+  height: 75%;
+  max-width: 25%;
+  width: 25%;
+}
+
+#floor { left: -70%;}
+
+/* https://w3.org/Style/Examples/007/center.ja.html#vertical3 */
+#floor p {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+
+  font-size: 90px;
+  color: red;
+  text-shadow: 2px 2px 0 pink, -2px -2px 0 pink, -2px 2px 0 pink, 2px -2px 0 pink;
+}
+
+#animation {
+  background-color: aqua;
+  border-radius: 5px;
+
+  max-width: 33%;
+  width: 33%;
+
+  /* divの範囲内に収める（img, text関係なく） */
+  overflow: hidden; 
+}
+
+/* https://web-dev.tech/front-end/css/transform-scale-reflect/ */
+#animation img {
+  display: none;
+  max-width: 300px;
+  width: 75%;
+  height: 40%;
+}
+
+#start_ani {
+  transform: scale(-1, 1);
+}
+
+ /* [https://asobi-lab.co.jp/lecture/web/clip-path/] 多角形 */
+ /* [https://qiita.com/degudegu2510/items/09f34d4b218c9df6bb57] 三角形 */
+ /* [https://naruweb.com/coding/transform/] */
+.bomb_r{
+  background-color: red;
+  clip-path: polygon(50% 0%, 60% 25%, 85% 15%, 80% 35%, 100% 45%, 71% 69%, 85% 100%, 55% 80%, 35% 95%, 30% 80%, 0% 90%, 20% 60%, 5% 55%, 25% 40%, 16% 9%, 35% 25%);
+}
+.bomb_o{
+  background-color: orange;
+  clip-path: polygon(50% 0%, 60% 25%, 85% 15%, 80% 35%, 100% 45%, 70% 70%, 85% 100%, 55% 80%, 35% 95%, 30% 80%, 0% 90%, 20% 60%, 5% 55%, 25% 40%, 15% 10%, 35% 25%);
+}
+
+#ani_open {
+  /* center */
+  display: none;
+
+  width: 40%;
+  height: 90%;
+}
+#ani_open div{
+  width: 85%;
+  height: 85%;
+}
+#ani_reach p{
+  display: none;
+  font-style: italic;
+  white-space: nowrap;
+  color: red;
+}
+#ani_BINGO span{
+  color: red;
+  position: absolute;
+  transform-origin: bottom;
+  top: -39px;
+  left: -24px;
+  height: 347px;
+}
+#ani_BINGO p{ transform: scale(1);}
+#b{ transform: rotate(-18deg);}
+#i{ transform: rotate(-7deg);}
+#n{ transform: rotate(0deg);}
+#g{ transform: rotate(9deg);}
+#o{ transform: rotate(18deg);}
+
+.ani_p {
+  font-size: 300%;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 white, -2px -2px 0 white, -2px 2px 0 white, 2px -2px 0 white;
+}
+
+
+#countdown { right: -70%; }
+#countdown p {
+  outline: 4px gray solid;
+  background-color: white;
+  color: black;
+  font-size: 350%;
+  font-weight: bold;
+
+  border: 8px red solid;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 50px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  margin: auto;
+  top: 3%;
+  right: 0;
+  left: -2px;
+  bottom: 72%;
+
+  max-width: 100%;
+  max-height: 399px;
+  height: 25%;
+  width: 100%;
+}
+
+/* --- header --- */
