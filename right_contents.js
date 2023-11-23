@@ -113,7 +113,7 @@ function sheet_reset() {
       if (!~square.className.indexOf("_FREE_")) {
         square.className = "sheet_squares";
         opened_nums[y][x] = false;
-        window.jungle_func.reset(y,x);
+        window.main_func.reset(y,x);
       }
     }
   }
@@ -124,7 +124,7 @@ function sheet_reset() {
   pts_caluculate(0);
 }
 
-window.sheet_func = {};
-window.sheet_func.open = open;
-window.sheet_func.opened = opened;
-window.sheet_func.reset = sheet_reset;
+window.right_func = {};
+window.right_func.open = open;
+window.right_func.opened = opened;
+window.right_func.reset = sheet_reset;

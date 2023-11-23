@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="JungleBingo_monitor.css">
   <link rel="stylesheet" href="header_contents.css">
   <link rel="stylesheet" href="main_contents.css">
+  <link rel="stylesheet" href="right_contents.css">  
 </head>
 
 <body>
@@ -35,21 +36,26 @@
     <div class="header_contents center" id="countdown">
       <p class="text_center">0 : 00</p>
     </div>
-    
+  </div>
+  
+  <!-- src = left_contents -->
+  <div class="left_contents">
+
   </div>
 
-
-  <div class="main-content">
-
-    <!-- src = "jungle_bingo.js" -->
+  <!-- src = main_contents -->
+  <div class="main_content">
     <div id="jungle" class="center">
       <span class="maze_storage" style="display: none;"></span>
       <span class="maze_storage" style="display: none;"></span>
       <button id="start"  class="center box" onclick="on_start()" ><p>START</p></button>
       <button id="finish" class="center box" onclick="on_finish()"><p>メニューに戻る</p></button>
     </div>
+  </div>
 
-    <!-- src = "sheet_bingo.js" -->
+
+  <!-- src = right_contents -->
+  <div class="right_contents">
     <div class="center" id="sheet">
       <table id="sheet_table" class="center">
         <thead class="sheet_thead">
@@ -74,6 +80,7 @@
 
 </body>
 <script src="header_contents.js"></script>
-<script src="jungle_bingo.js"></script>
-<script src="sheet_bingo.js"></script>
+<script src="main_contents.js"></script>
+<script src="right_contents.js"></script>
+<script src="left_contents.js"></script>
 </html>

@@ -41,7 +41,7 @@ function on_finish() {
   block_Byid("start"); // スタートボタン
   span[0].style.display = "none"; //jungle の 非表示
   document.getElementById("jungle").className = "center"; //ゲーム画面のモノクロをカラーに
-  window.sheet_func.reset();
+  window.right_func.reset();
   window.header_func.reset();
 }
 
@@ -123,7 +123,7 @@ function next_floor() {
   if (floor == 5 && !~confirm.className.indexOf("jungle_open")) {
     confirm.className += " jungle_open";
     confirm.innerText = "";
-    window.sheet_func.open(h, w);
+    window.right_func.open(h, w);
     span[1].replaceChild(document.getElementsByClassName("jungle_floor")[0].cloneNode(true), span[1].lastChild);
 
     GameStart();
@@ -574,7 +574,7 @@ function create_FREE(y, x, td) {
   y = (y - 1) / 2;
   x = (x - 1) / 2;
   td.className += " FREE jungle_open";
-  window.sheet_func.opened(y, x);
+  window.right_func.opened(y, x);
 }
 
 // reset
@@ -593,6 +593,6 @@ function current_floor() {
   window.header_func.Re_floor(floor);
 }
 
-window.jungle_func = {};
-window.jungle_func.GameEnd = GameEnd;
-window.jungle_func.reset = jungle_reset;
+window.main_func = {};
+window.main_func.GameEnd = GameEnd;
+window.main_func.reset = jungle_reset;
