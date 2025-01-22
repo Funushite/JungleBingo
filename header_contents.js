@@ -205,7 +205,7 @@ function countdown_concreat(){
 
   if (lest_time === 0){
     clearInterval(interval);
-    window.jungle_func.GameEnd();
+    window.main_func.GameEnd();
   }
 }
 window.header_func.countdown = countdown_display;
